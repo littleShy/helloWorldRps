@@ -7,8 +7,8 @@ os:
 before_script:
 - echo $LANG
 - echo $LC_ALL
-script: make
+script: make all
 after_success:
-- echo 'success'
+ echo 'success'
 after_failure:
-- echo 'failed'
+ echo 'failed'

@@ -2,3 +2,13 @@ language: cpp
 compiler:
   - clang
   - gcc
+os:
+- linux
+before_script:
+- echo $LANG
+- echo $LC_ALL
+script: make
+after_success:
+- echo 'success'
+after_failure:
+- echo 'failed'

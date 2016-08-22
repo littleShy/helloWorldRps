@@ -5,8 +5,10 @@ compiler:
 os:
 - linux
 before_script:
+- echo '==============================='
 - echo $LANG
 - echo $LC_ALL
+- echo '==============================='
 script: make all
 after_success:
  echo 'success'

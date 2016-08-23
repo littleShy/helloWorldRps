@@ -4,11 +4,14 @@ compiler:
 os:
 - linux
 before_script:
-- echo '==============================='
+- echo 'before_script'
 script: make all
 after_success:
-- echo 'success'
+- echo 'after_success'
 - chmod 775 test
 - ./test
 after_failure:
- echo 'failed'
+ echo 'after_failed'
+
+after_script:
+- echo 'after_script'

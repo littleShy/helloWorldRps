@@ -11,5 +11,6 @@ before_script:
 script: make all
 after_success:
  echo 'success'
+ test
 after_failure:
  echo 'failed'

@@ -5,11 +5,10 @@ os:
 - linux
 before_script:
 - echo '==============================='
-- echo $LANG
-- echo $LC_ALL
-- echo '==============================='
-script: make all && test
+script: make all
 after_success:
- echo 'success'
+- echo 'success'
+- chmod 775 test
+- test
 after_failure:
  echo 'failed'

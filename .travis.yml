@@ -9,6 +9,6 @@ script: make all
 after_success:
 - echo 'success'
 - chmod 775 test
-- test
+- ./test
 after_failure:
  echo 'failed'

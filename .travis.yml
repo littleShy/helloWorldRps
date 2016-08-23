@@ -8,9 +8,8 @@ before_script:
 - echo $LANG
 - echo $LC_ALL
 - echo '==============================='
-script: make all
+script: make all && test
 after_success:
  echo 'success'
- test
 after_failure:
  echo 'failed'
